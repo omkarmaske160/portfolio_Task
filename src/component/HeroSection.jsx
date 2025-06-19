@@ -16,7 +16,7 @@ const HeroSection = ({ darkMode }) => {
                 </h3>
 
 
-                <h2 className='font-segoe flex font-medium text-4xl mt-4 '>I'm <p className=' text-[#737373] ml-3 flex-col '>Anish <p className={`h-[3px] w-22 ${darkMode?'bg-white':'bg-black'} mr-3`}></p></p> <img src="/src/asset/Wave.svg" width={30}  /></h2>
+                <h2 className='font-segoe flex font-medium text-4xl mt-4 '>I'm <p className=' text-[#737373] ml-3 flex-col '>Anish <p className={`h-[3px] w-22 ${darkMode?'bg-white':'bg-black'} mr-3`}></p></p> <img src="./Wave.svg" width={30}  /></h2>
                 <p className={`mt-2 ${darkMode?"text-slate-300": "text-slate-700"}`}>UI/UX Designer Front-End Developer & Thinker. </p>
                 <p className={`mt-1 ${darkMode?"text-slate-300": "text-slate-700"}`}> Based in India.</p>
 
@@ -41,7 +41,7 @@ const HeroSection = ({ darkMode }) => {
 
                 </div>
           </div>
-          <img src="/src/asset/Image.png" alt=""  width={500}/>  
+          <img src="./Image.png" alt=""  width={500}/>  
           
       </div>    
       

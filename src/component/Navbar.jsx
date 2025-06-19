@@ -7,7 +7,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <header className="flex justify-between items-center py-4">
       <div className={`flex items-center gap-3 font-bold ${textColor}`}>
         <img
-          src={darkMode ? '/src/asset/Group15.png' : '/src/asset/Group23.png'}
+          src={darkMode ? './Group15.png' : './Group23.png'}
           alt="Logo"
           className="w-8 h-8"
         />
@@ -29,7 +29,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           className="p-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
         >
           <img
-            src={darkMode ? '/src/asset/Group21.png' : '/src/asset/Group3.png'}
+            src={darkMode ? './Group21.png' : './Group3.png'}
             alt={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
             className="w-6 h-6"
           />

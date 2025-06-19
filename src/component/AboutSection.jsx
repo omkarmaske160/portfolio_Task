@@ -20,11 +20,11 @@ const AboutSection = ({darkMode}) => {
      </p>
     </div>
     <div className={` ${darkMode?"bg-slate-300":"bg-slate-700"} h-[1px] w-64 mx-[35%] mt-16`}></div>
-    <img src="/src/asset/Vector 1.png" alt=""  className='fixed left-0 top-[14%] h-[450px] w-80'/>
-    <img src="/src/asset/Rectangle.png" alt=""  className='fixed left-0 top-[14%] h-[470px] w-[23.5rem]'/>
-    <img src="/src/asset/Vector 3.png" alt="" className='fixed top-[14%] h-[500px] w-60 right-0' />
-    <img src="/src/asset/Vector 4.png" alt="" className='fixed bottom-5 left-[17%]  w-52 ' />
-    <img src="/src/asset/Vector 5.png" alt="" className='fixed bottom-0 right-[11%]  w-64 ' />
+    <img src="./Vector 1.png" alt=""  className='fixed left-0 top-[14%] h-[450px] w-80'/>
+    <img src="./Rectangle.png" alt=""  className='fixed left-0 top-[14%] h-[470px] w-[23.5rem]'/>
+    <img src="./Vector 3.png" alt="" className='fixed top-[14%] h-[500px] w-60 right-0' />
+    <img src="./Vector 4.png" alt="" className='fixed bottom-5 left-[17%]  w-52 ' />
+    <img src="./Vector 5.png" alt="" className='fixed bottom-0 right-[11%]  w-64 ' />
   </section>
 }
 

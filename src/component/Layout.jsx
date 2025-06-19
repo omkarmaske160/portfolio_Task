@@ -14,45 +14,45 @@ const Layout = ({ darkMode, setDarkMode })  => {
     
          <div className='fixed bottom-10 left-17 '>
           <img
-              src={darkMode ? '/src/asset/Group 9.png' : '/src/asset/LFacebook.png'}
+              src={darkMode ? './Group 9.png' : './LFacebook.png'}
               alt="Logo"
               className="w-8 h-8 mb-2"
           />
            <img
-              src={darkMode ? '/src/asset/Group 7.png' : '/src/asset/LInstagram.png'}
+              src={darkMode ? './Group 7.png' : './LInstagram.png'}
               alt="Logo"
               className="w-8 h-8 mb-2"
           />
            <img
-              src={darkMode ? '/src/asset/Group 8.png' : '/src/asset/LTwitter.png'}
+              src={darkMode ? './Group 8.png' : './LTwitter.png'}
               alt="Logo"
               className="w-8 h-8 mb-2"
           />
            <img
-              src={darkMode ? '/src/asset/Group 10.png' : '/src/asset/LGitHub.png'}
+              src={darkMode ? './Group 10.png' : './LGitHub.png'}
               alt="Logo"
               className="w-8 h-8 mb-2"
           />
            <img
-              src={darkMode ? '/src/asset/Group 11.png' : '/src/asset/LLinkedIn.png'}
+              src={darkMode ? './Group 11.png' : './LLinkedIn.png'}
               alt="Logo"
               className="w-8 h-8 mb-2"
           />
            <img
-              src={darkMode ? '/src/asset/Group 12.png' : '/src/asset/LTelegram.png'}
+              src={darkMode ? './Group 12.png' : './LTelegram.png'}
               alt="Logo"
               className="w-8 h-8 mb-2"
           />
           <div className='relative w-8 h-8'>
               <img
-                  src={darkMode ? '/src/asset/Ellipse 2.png' : '/src/asset/LKoo.png'}
+                  src={darkMode ? './Ellipse 2.png' : './LKoo.png'}
                   alt="Logo"
                   className="w-8 h-8"
               />
               
               {darkMode && (
                   <img
-                    src="/src/asset/output-onlinepngtools 1.png"
+                    src="./output-onlinepngtools 1.png"
                     alt="Logo"
                     className="absolute inset-0 m-auto w-4 h-8"
                   />
