@@ -2,23 +2,29 @@ import React, { useEffect, useState } from 'react'
 import Navbar from './component/Navbar'
 import HeroSection from './component/HeroSection';
 import AboutSection from './component/AboutSection';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import Layout from './component/Layout';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const bgColor = darkMode ? 'bg-black text-white' : 'bg-white text-black';
+  
 
  useEffect(() => {
   document.documentElement.classList.toggle('dark', darkMode);
 }, [darkMode]);
 
-  return (
-    <div className={`h-screen transition-colors duration-300 ${bgColor}`}>
-      <section className="p-7 px-16">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        {/* <HeroSection darkMode={darkMode}/> */}
-        <AboutSection darkMode={darkMode}/>
-      </section>
-    </div>
-  );
+ 
+
+  return <>
+  <BrowserRouter>
+    <Routes>
+          <Route element={<Layout darkMode={darkMode} setDarkMode={setDarkMode} />}>
+          <Route index element={<HeroSection darkMode={darkMode} />} />
+          <Route path="/about" element={<AboutSection darkMode={darkMode} />} />
+        </Route>
+    </Routes>
+  </BrowserRouter>
+   
+  </>
 }
 export default App;

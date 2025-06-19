@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const textColor = darkMode ? 'text-white' : 'text-black';
@@ -15,12 +16,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
       <div className={`flex items-center gap-10 font-semibold ${textColor}`}>  
         
-        <a href="#" className="hover:underline">Home</a>
-        <a href="#" className="hover:underline">About</a>
-        <a href="#" className="hover:underline">Resume</a>
-        <a href="#" className="hover:underline">Skills</a>
-        <a href="#" className="hover:underline">Projects</a>
-        <a href="#" className="hover:underline">Contact</a>
+        <Link to="/" >Home</Link>
+        <Link to="/about" >About</Link>
+        <Link href="#" >Resume</Link>
+        <Link href="#" >Skills</Link>
+        <Link href="#" >Projects</Link>
+        <Link href="#" >Contact</Link>
 
         <button
           onClick={() => setDarkMode(!darkMode)}
