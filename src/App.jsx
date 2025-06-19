@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Navbar from './component/Navbar'
+import HeroSection from './component/HeroSection';
 
 const App = () => {
-  return (
-    <div className='bg-red-600'>App</div>
-  )
-}
+  const [darkMode, setDarkMode] = useState(false);
+  const bgColor = darkMode ? 'bg-black text-white' : 'bg-white text-black';
 
-export default App
+ useEffect(() => {
+  document.documentElement.classList.toggle('dark', darkMode);
+}, [darkMode]);
+
+  return (
+    <div className={`h-screen transition-colors duration-300 ${bgColor}`}>
+      <section className="p-7 px-16">
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <HeroSection darkMode={darkMode}/>
+      </section>
+    </div>
+  );
+}
+export default App;
