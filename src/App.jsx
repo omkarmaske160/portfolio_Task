@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './component/Navbar'
 import HeroSection from './component/HeroSection';
+import AboutSection from './component/AboutSection';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -14,7 +15,8 @@ const App = () => {
     <div className={`h-screen transition-colors duration-300 ${bgColor}`}>
       <section className="p-7 px-16">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <HeroSection darkMode={darkMode}/>
+        {/* <HeroSection darkMode={darkMode}/> */}
+        <AboutSection darkMode={darkMode}/>
       </section>
     </div>
   );
