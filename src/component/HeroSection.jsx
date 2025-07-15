@@ -1,7 +1,6 @@
 import React from 'react'
 
-const HeroSection = ({ darkMode }) => {
- 
+const HeroSection = ({ darkMode }) => { 
   return <section  >
       <div className=' flex mt-10 ml-30 items-top justify-between'>
            
@@ -21,14 +20,16 @@ const HeroSection = ({ darkMode }) => {
                 <p className={`mt-1 ${darkMode?"text-slate-300": "text-slate-700"}`}> Based in India.</p>
 
               <div className='mt-16'>
-                    <button
+                    <a
                       className={`text-white font-semibold px-5 py-2 rounded  shadow-slate-300 border-white border-2 mr-5 shadow-lg ${darkMode ?" shadow-slate-700" :" shadow-slate-300"}`}
                       style={{
                         background: 'linear-gradient(90deg, rgba(223, 88, 12, 1) 0%, rgba(253, 153, 61, 0.98) 100%)'
                       }}
+                      href='./CV.pdf'
+                      download={"CV.pdf"}
                     >
                       Download CV
-                    </button>
+                    </a>
                     <button
                       className={`text-white font-semibold px-5 py-2 rounded shadow-md hover:opacity-90 transition border-white border-2  ${darkMode ?" shadow-slate-700" :" shadow-slate-300"}`}
                     
